@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'HelloWorldAngular';
   imgUrl="";
   url;
+  userName: string = "";
 
   //Like constructor, initialize first. Life cycle event
   ngOnInit(): void {
