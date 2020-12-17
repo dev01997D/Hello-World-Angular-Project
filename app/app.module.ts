@@ -29,8 +29,12 @@ import { AppComponent } from './app.component';
     FormsModule
   ],
 
-
+// Typically Services like http-services are added to providers
   providers: [],
+
+  // The root component which is the main view of the application. Only the 
+  // root module has this property and it indicates the component that's 
+  // gonna be bootstrapped.
   bootstrap: [AppComponent]
 })
 export class AppModule { }
