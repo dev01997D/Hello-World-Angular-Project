@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HelloWorldAngular';
+  imgUrl="";
 
   //Like constructor, initialize first. Life cycle event
   ngOnInit(): void {
     this.title="Hello From BridgeLabz.";
+    this.imgUrl="../assets/bridgelabz.jpg"
   }
 }
