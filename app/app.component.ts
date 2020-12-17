@@ -8,10 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'HelloWorldAngular';
   imgUrl="";
+  url;
 
   //Like constructor, initialize first. Life cycle event
   ngOnInit(): void {
     this.title="Hello From BridgeLabz.";
-    this.imgUrl="../assets/bridgelabz.jpg"
+    this.imgUrl="../assets/bridgelabz.jpg";
+    this.url="https://www.bridgelabz.com/";
+  }
+
+  onClick($event){
+    console.log("Save button is clicked!", $event);
+    window.open(this.url, "_blank");
   }
 }
